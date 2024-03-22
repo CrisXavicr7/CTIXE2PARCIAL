@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar Clave</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Cédula</ion-label>
+    <ion-input [(ngModel)]="cedula" type="text"></ion-input>
+  </ion-item>
+  <ion-button (click)="verificarCedula()">Verificar</ion-button>
+
+  <div *ngIf="usuarioVerificado">
+    <ion-item>
+      <ion-label position="stacked">Nueva Clave</ion-label>
+      <ion-input [(ngModel)]="nuevaClave" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Confirmar Nueva Clave</ion-label>
+      <ion-input [(ngModel)]="confirmarClave" type="password"></ion-input>
+    </ion-item>
+    <ion-button (click)="cambiarClave()">Cambiar Clave</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ingresar Puestos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Número de Puestos</ion-label>
+    <ion-input type="number" [(ngModel)]="numPuestos"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="guardar()">Guardar</ion-button>
+</ion-content>

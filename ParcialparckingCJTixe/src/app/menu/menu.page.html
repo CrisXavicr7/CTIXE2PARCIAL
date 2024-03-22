@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Menú Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item lines="none">
+      <ion-label class="ion-text-center">Bienvenido: {{ usuario }}</ion-label>
+    </ion-item>
+    <ion-card>
+      <ion-card-content>
+        <ion-button expand="block" color="primary" (click)="irPuestos()">Puestos</ion-button>
+        <ion-button expand="block" color="primary" (click)="irIngresarValor()">Ingresar valor por hora</ion-button>
+        <ion-button expand="block" color="primary" (click)="irVerificarPuestos()">Verificar Puestos</ion-button>
+        <ion-button expand="block" color="primary" (click)="irIngresarVehiculo()">Registrar Vehiculos</ion-button>
+        <ion-button expand="block" color="primary" (click)="irSalida()">Salida Vehiculos</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

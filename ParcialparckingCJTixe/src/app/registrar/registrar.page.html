@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrar Vehículo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="registrarVehiculo()">
+    <ion-item>
+      <ion-label position="floating">Placa del Vehículo</ion-label>
+      <ion-input type="text" [(ngModel)]="placa" name="placa" required></ion-input>
+    </ion-item>
+    <ion-button type="submit" expand="full">Registrar Vehículo</ion-button>
+    <!-- Botón para volver al menú -->
+    <ion-button expand="full" (click)="volverAlMenu()">Volver al Menú</ion-button>
+  </form>
+</ion-content>

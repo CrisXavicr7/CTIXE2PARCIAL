@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Examen 2 Parcial CTixe
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div id="contenedor" style="max-width: 500px; margin: auto;">
+    <ion-item lines="none">
+      <img src="assets/imagenes/car.png" class="agenda-icono">
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label class="ion-text-center" style="font-size: large;"><b>Parking</b></ion-label>
+    </ion-item>
+    <ion-card color="secondary">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center"><b>Inicio de sesión</b></ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="txt_usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Clave</ion-label>
+          <ion-input type="password" [(ngModel)]="txt_clave"></ion-input>
+        </ion-item>
+        <div class="btn-group">
+          <ion-button color="primary" expand="block" class="ingresar-btn" (click)="loggin()">
+            Ingresar
+          </ion-button>
+          <ion-button color="primary" expand="block" fill="solid" class="recuperar-btn" (click)="presentActualizarClaveModal()">
+            Cambiar o<br>Recuperar Contraseña
+          </ion-button>
+        </div>
+        </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+ 
+
